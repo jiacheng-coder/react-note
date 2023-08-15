@@ -8,10 +8,10 @@ export default function Formily() {
   return (
     <div className='formily'>
       <h1>Formily</h1>
-      <Test />
+      {/* <Test /> */}
       {/* <AntdPage /> */}
       {/* <ReactPage /> */}
-      {/* <ReactivePage /> */}
+      <ReactivePage />
       {/* <CorePage /> */}
     </div>
   )

@@ -1,5 +1,4 @@
-import { observable } from "@formily/reactive";
-import { observer } from "../components/my-formily/reactive-react";
+import { observer, observable } from "../components/my-formily/reactive-react";
 import { Button } from "antd";
 
 // 可观察对象
@@ -12,12 +11,14 @@ const obj = observable({
 const ReactivePage = observer(() => {
   const handleClick = () => {
     obj.count++;
-    console.log(obj.count);
-  };
+  }
   return (
     <>
       <h3>Reactive Page</h3>
-      <Button onClick={handleClick}>{obj.count}</Button>
+      <section>
+        <span>Count --  </span>
+        <Button onClick={handleClick}>{obj.count}</Button>
+      </section>
     </>
   );
 });
